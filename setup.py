@@ -1,10 +1,10 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='sky_data_science_template',
-    version='0.1',
-    description='Sky Data Science Project Template',
-    author='Your Name',
+    name='data_science_project_template',
+    version='0.1.0',
+    description='Data Science Project Template',
+    author='Shailaja Janjirala',
     packages=find_packages(),
     install_requires=[
         'pandas',
