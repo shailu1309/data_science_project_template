@@ -26,4 +26,4 @@ jobs:
 
     - name: Publish package to PyPI
       run: |
-        twine upload dist/* -u __token__ -p ${{ secrets.PYPI_API_TOKEN }}
+        twine upload --repository data-science-project-template dist/* -u __token__ -p ${{ secrets.PYPI_API_TOKEN }}
