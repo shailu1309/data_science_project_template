@@ -19,12 +19,12 @@ pip install data-science-project-template==0.1.0
 ## Usage
 Initialize a new data science project using the template:
 
-```bash
 from data_science_project_template import initialize_project
 
 initialize_project('my_new_project')
+```
 
-##Folder Structure
+## Folder Structure
 
 ├── data/                   # Raw, processed, and interim data
 ├── models/                 # Trained models and serialized outputs

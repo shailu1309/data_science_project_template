@@ -26,4 +26,9 @@ jobs:
 
     - name: Publish package to PyPI
       run: |
-        twine upload --repository data-science-project-template dist/* -u __token__ -p ${{ secrets.PYPI_API_TOKEN }}
+        # Find the latest .whl and .tar.gz files in the dist/ directory
+        latest_whl=$(ls -t dist/*.whl | head -n 1)
+        latest_tar_gz=$(ls -t dist/*.tar.gz | head -n 1)
+        
+        # Upload the latest files to PyPI
+        twine upload $latest_whl $latest_tar_gz -u __token__ -p ${{ secrets.PYPI_API_TOKEN }}
