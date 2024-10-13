@@ -6,7 +6,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='data_science_project_template',
-    version='0.2.4',
+    version='1.0.0',
     description='Data Science Project Template',
     author='Shailaja Janjirala',
     packages=find_packages(),
